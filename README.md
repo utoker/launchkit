@@ -53,7 +53,7 @@ A production-ready SaaS starter built with **Next.js 16**, **Supabase**, **Strip
 - **Server Actions over API routes** — mutations use server actions for type safety and simplicity
 - **Data Access Layer** (`lib/dal.ts`) — cached, request-scoped data fetching with `React.cache()`
 - **Proxy-based auth** (`proxy.ts`) — session refresh on every request without Next.js middleware
-- **Row-Level Security** — multi-tenant data isolation enforced at the database level
+- **Row-Level Security** — per-user data isolation enforced at the database level (auth.uid() = user_id)
 - **Streaming AI** — Vercel AI SDK with `useChat` hook and custom transport
 
 ## Project Structure
